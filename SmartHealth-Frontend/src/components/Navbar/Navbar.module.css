@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+.container {
+  padding: 0 10px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  height: 10vh;
+  background: linear-gradient(84.18deg, #2D495D 0.31%, #28333A 100%) fixed center center/cover;
+  /* position: relative; */
+  width: 100%;
+}
+
+.menu_icon {
+  display: none;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+}
+
+.signIn {
+  display: flex;
+  width: 160px;
+  align-items: center;
+}
+
+.signIn img {
+  margin-right: 15px;
+  margin-left: 40px;
+}
+
+.nav_elements ul {
+  /* margin-right: 50px; */
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav_elements ul li:not(:last-child) {
+  margin-right: 5vw;
+}
+
+.nav_elements ul a {
+  font-family: 'Work Sans';
+  font-size: 1.1vw;
+  font-weight: 400;
+  color: #FCFEFE;
+  ;
+  text-decoration: none;
+}
+
+.nav_elements ul a.active {
+  color: #574c4c;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav_elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+}
+
+.brand {
+  padding-left: 20px;
+  font-size: 2.5vw;
+  font-family: 'Yeseva One', cursive;
+  color: white;
+  display: inline !important;
+  margin-top: 40px;
+}
+
+.logoSection img {
+  width: 4vw;
+}
+
+.brandIn {
+  color: #CDAA64;
+  display: inline !important;
+}
+
+.appointment {
+  background-color: #CDAA64;
+  color: #28333A !important;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
+}
+
+.nav_elements ul li.active a {
+  color: #CDAA64;
+  font-weight: 500;
+  position: relative;
+}
+
+@media (max-width:1240px) {
+  .signIn {
+    margin-top: -5px;
+    display: flex;
+    width: 100px;
+    margin-right: 20px;
+    align-items: center;
+  }
+
+  .signIn img {
+    margin-right: 15px;
+    margin-left: 0px;
+  }
+
+  .nav_elements ul li:not(:last-child) {
+    margin-right: 60px;
+  }
+
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width:1140px) {
+  .nav_elements {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 100%;
+  }
+
+  .brand {
+    padding-left: 20px;
+    font-size: 40px;
+    font-family: 'Yeseva One', cursive;
+    color: white;
+    display: inline !important;
+    margin-top: 40px;
+  }
+
+  .logoSection img {
+    width: 25%;
+    height: 25%;
+  }
+}
